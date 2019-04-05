@@ -99,7 +99,8 @@ input|output|comments
 
 ### Task 5 (extra):
 
-To increase security ignore any letters and dashes, and also consider the card number to "loop" around itself (a.k.a.imagine that the first digit follows the last one).
+To increase security ignore any letters and dashes, and also consider the card number to "loop" around itself
+(a.k.a.imagine that the first digit follows the last one).
 
 #### Examples:
 input|output|comments
