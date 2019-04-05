@@ -9,7 +9,7 @@ public class Task5 {
 
             if ( input.charAt(0) =='-' || input.charAt(0)=='|' || (input.charAt(0) > 'a' && input.charAt(0) < 'z') ||
                     (input.charAt(0) > 'A' && input.charAt(0) < 'Z')
-                
+
         }
 
 

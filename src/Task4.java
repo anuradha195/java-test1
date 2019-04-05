@@ -8,6 +8,17 @@ public class Task4 {
         System.out.println("Please enter input to test if its Palindrome ");
         String name=sc.next();
 
+        /*
+        Scanner sc=new Scanner(System.in);
+        String word = sc.next();
+        String test="null";
+        for ( int i= (word.length() - 1); i>= 0 ; i--)
+        {
+            char c= word.charAt(i);
+            test=test+c;
+        }
+        */
+         */
         String reverse = new StringBuffer(name).reverse().toString();
 
         if ( name.equals(reverse) )
