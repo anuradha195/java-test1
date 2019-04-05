@@ -1,0 +1,13 @@
+1: b
+2: First go the directory in which you downloaded your application and run "sudo dpkg -i foobar"
+3: d
+4: d
+5: b
+6: a
+7: x=1
+8: x=15;
+9: x=3
+10: x=2
+11: true
+12: true
+
