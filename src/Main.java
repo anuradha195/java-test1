@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class Task1 {
+public class Main {
 
     public static void main(String[] args)
     {
 
-        System.out.println("Hello User, Good Day!!!");
+        /* System.out.println("Hello User, Good Day!!!");
         System.out.println("Please enter your name: ");
         Scanner sc=new Scanner(System.in);
         String name=sc.next();
@@ -21,8 +21,17 @@ public class Task1 {
         if (ppl_in_Que > sum)
             System.out.println("Can't fit");
         else
-            System.out.println("Can fit");
+            System.out.println("Can fit"); */
+        /*int x = 0;
+        x = ++x + x++;
+        System.out.println(x);
 
+        boolean a = true;
+        boolean b = false;
+        boolean x = a && !b;*/
+        boolean x = false || true && 5 >= 5;
+
+        System.out.println(x);
 
 
     }
