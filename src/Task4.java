@@ -18,7 +18,7 @@ public class Task4 {
             test=test+c;
         }
         */
-         */
+
         String reverse = new StringBuffer(name).reverse().toString();
 
         if ( name.equals(reverse) )
