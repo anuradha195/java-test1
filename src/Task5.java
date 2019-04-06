@@ -1,18 +1,36 @@
-public class Task5 {
+import java.util.Scanner;
 
-    public static void main(String[] args)
-    {
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Please enter input: ");
-        int input=sc.nextInt();
-        for (int i=0; i < input.length(); i ++) {
+public class Task5
+{
 
-            if ( input.charAt(0) =='-' || input.charAt(0)=='|' || (input.charAt(0) > 'a' && input.charAt(0) < 'z') ||
-                    (input.charAt(0) > 'A' && input.charAt(0) < 'Z')
-
-        }
+    public static void main(String[] args) {
 
 
+        Scanner sc = new Scanner(System.in);
+        String number = sc.next();
+        int sum = 0;
+        String new_number = number.replaceAll("[^0-9]", "");
+        System.out.println(new_number);
 
+        for (int i = 0; i < new_number.length()-1; i++) {
+            char digit1 = new_number.charAt(i);
+            int digitAsInt1 = (int) digit1 - 48;
+            char digit2 = new_number.charAt(i+1);
+            int digitAsInt2 = (int) digit2 - 48;
+
+                if (digitAsInt1 == digitAsInt2) {
+                    sum += digitAsInt1;
+                    // System.out.println("Sum : " +sum);
+                    i++;
+                }
+
+            }
+        if ( sum ==0)
+            System.out.print("no change");
+
+        System.out.println(sum);
     }
+
+
 }
+
