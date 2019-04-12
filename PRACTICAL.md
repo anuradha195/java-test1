@@ -132,9 +132,12 @@ input|output|comments
 The product is now protected. Let's try to catch the hacker.
 They were careless and left a signature that could be used to identify them, but it is compressed in a unique format.
 
-The format compresses a sequence of characters. Whitespace is ignored. To indicate that some sequence should be repeated, a marker is added to the text, like (10x2). To decompress this marker, take the subsequent 10 characters and repeat them 2 times. Then, continue reading the input after the repeated data. The marker itself is not included in the decompressed output.
+The format compresses a sequence of characters. Whitespace is ignored. To indicate that some sequence should be repeated,
+a marker is added to the text, like (10x2). To decompress this marker, take the subsequent 10 characters and repeat them 2 times.
+Then, continue reading the input after the repeated data. The marker itself is not included in the decompressed output.
 
-If parentheses or other characters appear within the data referenced by a marker, that's okay - treat it like normal data, not a marker, and then resume looking for markers after the decompressed section.
+If parentheses or other characters appear within the data referenced by a marker, that's okay - treat it like normal data,
+ not a marker, and then resume looking for markers after the decompressed section.
 
 Create an application that:
 - reads a compressed sequence of characters
@@ -147,7 +150,8 @@ input|output|comments
 `A(1x5)BC`|`ABBBBBC`|repeats the single symbol `B` for a total of 5 times
 `(3x2)XYZ`|`XYZXYZ`|repeats the three characters two times
 `A(2x2)BCD(2x2)EFG`|`ABCBCDEFEFG`|doubles the `BC` and then doubles the `EF`
-`(6x1)(1x3)A`|`(1x3)A`|the `(1x3)` looks like a marker, but because it's within a data section of another marker, it is not treated any differently from the `A` that comes after it
+`(6x1)(1x3)A`|`(1x3)A`|the `(1x3)` looks like a marker, but because it's within a data section of another marker,
+it is not treated any differently from the `A` that comes after it
 `X(8x2)(3x3)ABCY`|`X(3x3)ABC(3x3)ABCY`|putting all the cases together
 
 ### Task 7 (extra):
